@@ -3,438 +3,328 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rimal Saham Alfidiya | Industrial Catering & Contracting</title>
+  <title>Rimal Saham Alfidiya | Industrial Catering & Contracting in Oman</title>
   <meta name="description" content="Rimal Saham Alfidiya Trad & Cont – established in 2007, delivering industrial and institutional catering, housekeeping, and contracting services in Oman.">
   <meta name="theme-color" content="#ffffff">
   <meta name="color-scheme" content="light only">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     /* ─── Tokens (light only) ────────────────────────────── */
     :root {
       color-scheme: light only;
-      --white:     #ffffff;
-      --sky-50:    #f3f8fe;
-      --sky-100:   #e6f0fc;
-      --sky-200:   #cfe1f8;
-      --blue:      #1f56b8;
-      --blue-600:  #18469a;
-      --red:       #e2463b;
-      --red-50:    #fdeeec;
-      --sand-50:   #fbf5ea;
-      --mint-50:   #eaf7f0;
-      --mint:      #1f8a5b;
-      --amber:     #b7791f;
-      --ink:       #1b2433;
-      --ink-2:     #4a5568;
-      --ink-3:     #718096;
-      --line:      #e6ebf2;
-      --radius:    18px;
-      --radius-lg: 28px;
-      --shadow:    0 10px 30px rgba(31, 86, 184, .08), 0 2px 6px rgba(27, 36, 51, .04);
-      --max:       1180px;
-      --font:      'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      --white:    #ffffff;
+      --alt:      #f5f7fa;
+      --alt-2:    #eef2f7;
+      --navy:     #12305a;
+      --navy-600: #0d2546;
+      --navy-50:  #e9eff7;
+      --red:      #c8372d;
+      --ink:      #101b2d;
+      --ink-2:    #46546a;
+      --ink-3:    #6b788c;
+      --line:     #e1e6ee;
+      --radius:   8px;
+      --max:      1200px;
+      --font:     'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
     }
 
     /* ─── Base ───────────────────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    html { scroll-behavior: smooth; scroll-padding-top: 84px; }
     body {
-      font-family: var(--font);
-      background: var(--white);
-      color: var(--ink);
-      line-height: 1.65;
-      -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
+      font-family: var(--font); background: var(--white); color: var(--ink);
+      line-height: 1.65; -webkit-font-smoothing: antialiased; overflow-x: hidden;
     }
     img { max-width: 100%; height: auto; display: block; }
     a { color: inherit; }
-    .container { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
-    section { padding: 100px 0; }
-    .tint { background: var(--sky-50); }
+    .container { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
+    section { padding: 104px 0; }
+    .alt { background: var(--alt); }
 
-    .pill {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 6px 14px; border-radius: 999px;
-      background: var(--sky-100); color: var(--blue);
-      font-size: .8rem; font-weight: 700; letter-spacing: .02em;
+    h1, h2, h3 { color: var(--ink); letter-spacing: -.02em; line-height: 1.15; font-weight: 700; }
+    h2 { font-size: clamp(1.8rem, 3.2vw, 2.5rem); }
+    .kicker {
+      display: inline-flex; align-items: center; gap: 10px; margin-bottom: 16px;
+      font-size: .78rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--navy);
     }
-    .pill .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--red); }
-    h1, h2, h3 { letter-spacing: -.025em; line-height: 1.12; font-weight: 800; color: var(--ink); }
-    h2 { font-size: clamp(1.9rem, 3.8vw, 2.8rem); margin: 16px 0 14px; }
-    .sub { color: var(--ink-2); font-size: 1.08rem; max-width: 600px; }
-    .head { margin-bottom: 52px; }
-    .head.center { text-align: center; }
-    .head.center .sub { margin: 0 auto; }
-    .hl { color: var(--blue); }
+    .kicker::before { content: ''; width: 24px; height: 2px; background: var(--red); }
+    .lead { color: var(--ink-2); font-size: 1.06rem; max-width: 620px; }
+    .sec-head { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: end; margin-bottom: 56px; }
+    .sec-head .lead { justify-self: end; }
+    .sec-head.stack { grid-template-columns: 1fr; gap: 0; }
 
     .btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 14px 24px; border-radius: 999px;
-      font: 700 .95rem/1 var(--font); text-decoration: none;
-      border: 1.5px solid transparent; cursor: pointer;
-      transition: transform .2s ease, background .2s ease, box-shadow .2s ease, border-color .2s ease;
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      padding: 14px 24px; border-radius: 6px; border: 1px solid transparent;
+      font: 600 .94rem/1 var(--font); text-decoration: none; cursor: pointer;
+      transition: background .2s, border-color .2s, color .2s;
     }
-    .btn:hover { transform: translateY(-2px); }
-    .btn-primary { background: var(--blue); color: #fff; box-shadow: 0 8px 20px rgba(31, 86, 184, .25); }
-    .btn-primary:hover { background: var(--blue-600); }
-    .btn-light { background: var(--white); color: var(--ink); border-color: var(--line); }
-    .btn-light:hover { border-color: var(--sky-200); box-shadow: var(--shadow); }
-    .btn svg { width: 17px; height: 17px; }
+    .btn svg { width: 16px; height: 16px; }
+    .btn-primary { background: var(--navy); color: #fff; }
+    .btn-primary:hover { background: var(--navy-600); }
+    .btn-outline { background: var(--white); color: var(--navy); border-color: #c7d2e1; }
+    .btn-outline:hover { border-color: var(--navy); }
 
-    /* ─── Top bar ────────────────────────────────────────── */
-    .topbar { background: var(--sky-50); border-bottom: 1px solid var(--line); font-size: .84rem; color: var(--ink-2); }
-    .topbar .container { display: flex; justify-content: space-between; align-items: center; gap: 16px; height: 40px; }
-    .topbar a { text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
-    .topbar a:hover { color: var(--blue); }
-    .topbar svg { width: 14px; height: 14px; color: var(--blue); }
-    .topbar-links { display: flex; gap: 22px; }
+    /* ─── Header ─────────────────────────────────────────── */
+    .util { border-bottom: 1px solid var(--line); font-size: .82rem; color: var(--ink-3); }
+    .util .container { display: flex; justify-content: space-between; align-items: center; height: 40px; gap: 16px; }
+    .util-links { display: flex; gap: 28px; }
+    .util a { text-decoration: none; display: inline-flex; align-items: center; gap: 7px; }
+    .util a:hover { color: var(--navy); }
+    .util svg { width: 14px; height: 14px; color: var(--navy); }
 
-    /* ─── Nav ────────────────────────────────────────────── */
-    .nav {
-      position: sticky; top: 0; z-index: 50;
-      background: rgba(255, 255, 255, .88);
-      backdrop-filter: saturate(160%) blur(14px);
-      -webkit-backdrop-filter: saturate(160%) blur(14px);
-      border-bottom: 1px solid transparent;
-      transition: border-color .2s ease, box-shadow .2s ease;
-    }
-    .nav.scrolled { border-bottom-color: var(--line); box-shadow: 0 4px 20px rgba(27, 36, 51, .04); }
+    .nav { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.95); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
     .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 76px; }
-    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-    .brand svg { height: 36px; width: auto; color: #1f3a7a; }
-    .brand-name { font-weight: 800; font-size: 1rem; letter-spacing: -.01em; line-height: 1.2; }
-    .brand-name small { display: block; font-weight: 500; font-size: .74rem; color: var(--ink-3); letter-spacing: 0; }
-    .nav-links { display: flex; align-items: center; gap: 6px; list-style: none; }
-    .nav-links a {
-      text-decoration: none; font-size: .93rem; font-weight: 600; color: var(--ink-2);
-      padding: 8px 14px; border-radius: 999px; transition: color .2s, background .2s;
-    }
-    .nav-links a:hover, .nav-links a.active { color: var(--blue); background: var(--sky-50); }
-    .nav-cta { padding: 11px 20px; font-size: .9rem; }
-    .menu-btn {
-      display: none; width: 44px; height: 44px; border-radius: 12px;
-      border: 1px solid var(--line); background: var(--white); color: var(--ink);
-      align-items: center; justify-content: center; cursor: pointer;
-    }
+    .brand { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+    .brand svg { height: 36px; width: auto; color: var(--navy); }
+    .brand-name { font-weight: 700; font-size: 1rem; line-height: 1.2; letter-spacing: -.01em; padding-left: 14px; border-left: 1px solid var(--line); }
+    .brand-name small { display: block; font-weight: 500; font-size: .74rem; color: var(--ink-3); letter-spacing: .02em; }
+    .nav-links { display: flex; gap: 34px; list-style: none; }
+    .nav-links a { text-decoration: none; font-size: .92rem; font-weight: 500; color: var(--ink-2); padding: 27px 0; border-bottom: 2px solid transparent; transition: color .2s, border-color .2s; }
+    .nav-links a:hover { color: var(--navy); }
+    .nav-links a.active { color: var(--navy); border-bottom-color: var(--red); }
+    .nav-cta { padding: 11px 20px; font-size: .88rem; }
+    .menu-btn { display: none; width: 44px; height: 44px; border-radius: 6px; border: 1px solid var(--line); background: var(--white); color: var(--ink); align-items: center; justify-content: center; cursor: pointer; }
     .menu-btn svg { width: 20px; height: 20px; }
-    .mobile-menu { display: none; border-top: 1px solid var(--line); padding: 8px 24px 20px; background: var(--white); }
-    .mobile-menu a { display: block; padding: 13px 0; text-decoration: none; font-weight: 600; border-bottom: 1px solid var(--line); }
-    .mobile-menu a:last-child { border-bottom: 0; color: var(--blue); }
+    .mobile-menu { display: none; border-top: 1px solid var(--line); padding: 6px 28px 18px; background: var(--white); }
+    .mobile-menu a { display: block; padding: 13px 0; text-decoration: none; font-weight: 500; border-bottom: 1px solid var(--line); }
+    .mobile-menu a:last-child { border-bottom: 0; color: var(--navy); font-weight: 600; }
     .mobile-menu.open { display: block; }
 
     /* ─── Hero ───────────────────────────────────────────── */
-    .hero {
-      padding: 80px 0 0; text-align: center; position: relative;
-      background:
-        radial-gradient(900px 420px at 15% 0%, var(--sky-100), transparent 70%),
-        radial-gradient(700px 380px at 90% 10%, var(--red-50), transparent 70%),
-        var(--white);
+    .hero { padding: 80px 0 0; }
+    .hero-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 64px; align-items: center; }
+    .hero h1 { font-size: clamp(2.4rem, 4.6vw, 3.6rem); margin-bottom: 22px; }
+    .hero h1 span { color: var(--navy); }
+    .hero .lead { font-size: 1.12rem; margin-bottom: 34px; }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 44px; }
+    .creds { display: grid; grid-template-columns: repeat(3, auto); justify-content: start; gap: 28px; padding-top: 28px; border-top: 1px solid var(--line); }
+    .cred { display: flex; align-items: center; gap: 10px; font-size: .88rem; font-weight: 600; color: var(--ink); }
+    .cred svg { width: 20px; height: 20px; color: var(--navy); flex-shrink: 0; }
+    .hero-media { position: relative; }
+    .hero-media img { width: 100%; aspect-ratio: 5 / 4.6; object-fit: cover; object-position: 40% center; border-radius: var(--radius); }
+    .hero-media::before { content: ''; position: absolute; top: -16px; right: -16px; width: 120px; height: 120px; border-top: 3px solid var(--red); border-right: 3px solid var(--red); border-radius: 0 var(--radius) 0 0; }
+    .hero-tag {
+      position: absolute; left: -28px; bottom: 32px; background: var(--white);
+      border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 22px;
+      box-shadow: 0 12px 32px rgba(16,27,45,.10); min-width: 230px;
     }
-    .hero h1 { font-size: clamp(2.5rem, 6vw, 4.6rem); max-width: 900px; margin: 22px auto 20px; isolation: isolate; }
-    .hero h1 .underline { position: relative; white-space: nowrap; color: var(--blue); }
-    .hero h1 .underline::after {
-      content: ''; position: absolute; left: 0; right: 0; bottom: .02em; height: .14em;
-      background: var(--red); opacity: .85; border-radius: 99px; z-index: -1;
-    }
-    .hero .sub { margin: 0 auto 34px; font-size: 1.15rem; max-width: 640px; }
-    .hero-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-    .hero-visual { position: relative; margin-top: 64px; }
-    .hero-visual img {
-      width: 100%; aspect-ratio: 21 / 9; object-fit: cover; object-position: center 60%;
-      border-radius: var(--radius-lg); box-shadow: var(--shadow);
-    }
-    .hero-stats {
-      display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
-      max-width: 980px; margin: -56px auto 0; position: relative; z-index: 2; padding: 0 24px;
-    }
-    .hero-stat {
-      background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
-      padding: 22px 20px; text-align: left; box-shadow: var(--shadow);
-    }
-    .hero-stat b { display: block; font-size: 1.7rem; font-weight: 800; letter-spacing: -.03em; line-height: 1.1; color: var(--blue); }
-    .hero-stat span { font-size: .86rem; color: var(--ink-2); font-weight: 500; }
+    .hero-tag small { display: block; font-size: .72rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+    .hero-tag b { display: block; font-size: 1.05rem; margin-top: 4px; }
+
+    /* ─── Metrics band ───────────────────────────────────── */
+    .metrics { margin-top: 88px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--alt); }
+    .metrics .container { display: grid; grid-template-columns: repeat(4, 1fr); }
+    .metric { padding: 34px 28px; border-left: 1px solid var(--line); }
+    .metric:first-child { border-left: 0; padding-left: 0; }
+    .metric b { display: block; font-size: 2.2rem; font-weight: 700; letter-spacing: -.03em; color: var(--navy); line-height: 1.1; }
+    .metric span { display: block; margin-top: 6px; font-size: .88rem; color: var(--ink-2); }
 
     /* ─── About ──────────────────────────────────────────── */
-    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+    .about-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 72px; align-items: center; }
+    .about-media img { width: 100%; aspect-ratio: 4 / 4.2; object-fit: cover; object-position: 52% center; border-radius: var(--radius); }
+    .about-text h2 { margin-bottom: 20px; }
     .about-text p { color: var(--ink-2); margin-bottom: 16px; }
-    .checks { list-style: none; display: grid; gap: 12px; margin-top: 26px; }
-    .checks li { display: flex; gap: 12px; align-items: flex-start; font-weight: 600; }
-    .checks svg { width: 22px; height: 22px; flex-shrink: 0; color: var(--mint); background: var(--mint-50); border-radius: 50%; padding: 4px; }
-    .about-media { position: relative; }
-    .about-media img { width: 100%; aspect-ratio: 4 / 4.4; object-fit: cover; object-position: 52% center; border-radius: var(--radius-lg); }
-    .badge-card {
-      position: absolute; right: -18px; bottom: 32px;
-      background: var(--white); border-radius: var(--radius); padding: 18px 22px;
-      box-shadow: var(--shadow); border: 1px solid var(--line);
-    }
-    .badge-card small { display: block; font-size: .74rem; font-weight: 700; color: var(--red); letter-spacing: .06em; text-transform: uppercase; }
-    .badge-card b { display: block; font-size: 2rem; font-weight: 800; letter-spacing: -.03em; line-height: 1.1; }
-    .badge-card span { font-size: .84rem; color: var(--ink-3); }
-    .blob {
-      position: absolute; inset: -18px 18px 18px -18px; z-index: -1;
-      background: var(--sky-100); border-radius: var(--radius-lg);
-    }
+    .pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; margin-top: 30px; }
+    .pillar { background: var(--white); padding: 20px 22px; }
+    .pillar b { display: block; font-size: .95rem; margin-bottom: 4px; }
+    .pillar span { font-size: .87rem; color: var(--ink-2); }
 
-    /* ─── Services (pastel bento) ────────────────────────── */
-    .services { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
-    .svc {
-      border-radius: var(--radius-lg); padding: 30px 26px 32px;
-      transition: transform .25s ease, box-shadow .25s ease;
-      display: flex; flex-direction: column;
-    }
-    .svc:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
-    .svc h3 { font-size: 1.15rem; margin: 22px 0 10px; }
-    .svc p { color: var(--ink-2); font-size: .94rem; }
-    .svc-icon {
-      width: 52px; height: 52px; border-radius: 16px; display: grid; place-items: center;
-      background: var(--white); box-shadow: 0 4px 12px rgba(27, 36, 51, .06);
-    }
+    /* ─── Services ───────────────────────────────────────── */
+    .services { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); overflow: hidden; }
+    .svc { padding: 36px 30px 40px; border-left: 1px solid var(--line); position: relative; }
+    .svc:first-child { border-left: 0; }
+    .svc::after { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 3px; background: var(--navy); transform: scaleX(0); transform-origin: left; transition: transform .3s ease; }
+    .svc:hover::after { transform: scaleX(1); }
+    .svc-num { font-size: .78rem; font-weight: 600; color: var(--ink-3); letter-spacing: .08em; }
+    .svc-icon { width: 48px; height: 48px; border-radius: 8px; background: var(--navy-50); color: var(--navy); display: grid; place-items: center; margin: 22px 0; }
     .svc-icon svg { width: 24px; height: 24px; }
-    .svc.blue  { background: var(--sky-100); } .svc.blue .svc-icon  { color: var(--blue); }
-    .svc.red   { background: var(--red-50); }  .svc.red .svc-icon   { color: var(--red); }
-    .svc.sand  { background: var(--sand-50); } .svc.sand .svc-icon  { color: var(--amber); }
-    .svc.mint  { background: var(--mint-50); } .svc.mint .svc-icon  { color: var(--mint); }
+    .svc h3 { font-size: 1.1rem; margin-bottom: 10px; }
+    .svc p { color: var(--ink-2); font-size: .93rem; }
 
-    /* ─── Projects (list) ────────────────────────────────── */
-    .projects { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; }
-    .project {
-      display: grid; grid-template-columns: 52px 1.1fr 1.4fr 190px; gap: 24px; align-items: center;
-      padding: 26px 30px; border-top: 1px solid var(--line); transition: background .2s ease;
-    }
-    .project:first-child { border-top: 0; }
-    .project:hover { background: var(--sky-50); }
-    .project .n {
-      width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center;
-      background: var(--sky-100); color: var(--blue); font-weight: 800; font-size: .9rem;
-    }
-    .project h3 { font-size: 1.06rem; letter-spacing: -.01em; }
-    .project p { color: var(--ink-2); font-size: .93rem; }
-    .chip {
-      font-size: .76rem; font-weight: 700; padding: 6px 12px; border-radius: 999px;
-      background: var(--red-50); color: var(--red); white-space: nowrap; justify-self: end;
-    }
+    /* ─── Projects table ─────────────────────────────────── */
+    .table { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--white); }
+    .row { display: grid; grid-template-columns: 70px 1.1fr 1.5fr 200px; gap: 24px; align-items: center; padding: 22px 28px; border-top: 1px solid var(--line); }
+    .row:first-child { border-top: 0; }
+    .row.head { background: var(--alt-2); font-size: .74rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); padding-top: 14px; padding-bottom: 14px; }
+    .row:not(.head):hover { background: var(--alt); }
+    .row .idx { font-weight: 600; color: var(--ink-3); font-size: .9rem; }
+    .row h3 { font-size: 1rem; letter-spacing: -.01em; }
+    .row p { font-size: .92rem; color: var(--ink-2); }
+    .sector { justify-self: start; font-size: .8rem; font-weight: 600; color: var(--navy); background: var(--navy-50); padding: 6px 12px; border-radius: 4px; white-space: nowrap; }
 
     /* ─── Values ─────────────────────────────────────────── */
-    .values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-    .value {
-      background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-lg);
-      padding: 34px 30px; position: relative; overflow: hidden;
-    }
-    .value .big {
-      font-size: 4.2rem; font-weight: 800; line-height: 1; letter-spacing: -.05em;
-      color: var(--sky-100); position: absolute; top: 18px; right: 24px;
-    }
-    .value h3 { font-size: 1.2rem; margin-bottom: 10px; position: relative; }
-    .value p { color: var(--ink-2); font-size: .95rem; position: relative; }
-    .value .bar { width: 36px; height: 4px; border-radius: 4px; background: var(--red); margin-bottom: 22px; }
+    .values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .value { background: var(--white); border: 1px solid var(--line); border-top: 3px solid var(--navy); border-radius: var(--radius); padding: 32px 30px; }
+    .value .n { font-size: .8rem; font-weight: 600; color: var(--red); letter-spacing: .08em; }
+    .value h3 { font-size: 1.15rem; margin: 12px 0 10px; }
+    .value p { color: var(--ink-2); font-size: .94rem; }
 
-    /* ─── Org chart ──────────────────────────────────────── */
-    .org-box {
-      background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-lg);
-      padding: 44px 24px; overflow-x: auto;
-    }
-    .tree { width: max-content; margin: 0 auto; --tline: var(--sky-200); }
-    .tree ul { display: flex; justify-content: center; padding-top: 24px; position: relative; list-style: none; }
+    /* ─── Organisation ───────────────────────────────────── */
+    .org-wrap { display: grid; grid-template-columns: 1fr; gap: 24px; }
+    .org-box { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 40px 20px; overflow-x: auto; }
+    .tree { width: max-content; margin: 0 auto; --tline: #c3cedd; }
+    .tree ul { display: flex; justify-content: center; padding-top: 22px; position: relative; list-style: none; }
     .tree > ul { padding-top: 0; }
-    .tree li { position: relative; padding: 24px 8px 0; text-align: center; list-style: none; }
-    .tree li::before, .tree li::after {
-      content: ''; position: absolute; top: 0; right: 50%;
-      width: 50%; height: 24px; border-top: 2px solid var(--tline);
-    }
-    .tree li::after { right: auto; left: 50%; border-left: 2px solid var(--tline); }
+    .tree li { position: relative; padding: 22px 6px 0; text-align: center; list-style: none; }
+    .tree li::before, .tree li::after { content: ''; position: absolute; top: 0; right: 50%; width: 50%; height: 22px; border-top: 1.5px solid var(--tline); }
+    .tree li::after { right: auto; left: 50%; border-left: 1.5px solid var(--tline); }
     .tree li:only-child::before, .tree li:only-child::after { display: none; }
     .tree li:only-child { padding-top: 0; }
     .tree li:first-child::before, .tree li:last-child::after { border: 0; }
-    .tree li:last-child::before { border-right: 2px solid var(--tline); border-radius: 0 10px 0 0; }
-    .tree li:first-child::after { border-radius: 10px 0 0 0; }
-    .tree ul ul::before {
-      content: ''; position: absolute; top: 0; left: 50%;
-      height: 24px; border-left: 2px solid var(--tline);
-    }
+    .tree li:last-child::before { border-right: 1.5px solid var(--tline); border-radius: 0 6px 0 0; }
+    .tree li:first-child::after { border-radius: 6px 0 0 0; }
+    .tree ul ul::before { content: ''; position: absolute; top: 0; left: 50%; height: 22px; border-left: 1.5px solid var(--tline); }
     .tree > ul > li { padding-top: 0; }
-    .node {
-      display: inline-block; white-space: nowrap;
-      background: var(--sky-50); border: 1px solid var(--sky-200); border-radius: 12px;
-      padding: 10px 16px; font-size: .86rem; font-weight: 700; color: var(--ink);
-    }
-    .node.top { background: var(--blue); border-color: var(--blue); color: #fff; }
-    .node.mid { background: var(--white); border-color: var(--blue); color: var(--blue); }
+    .node { display: inline-block; white-space: nowrap; background: var(--white); border: 1px solid #cfd8e5; border-radius: 6px; padding: 9px 14px; font-size: .82rem; font-weight: 600; }
+    .node.top { background: var(--navy); border-color: var(--navy); color: #fff; }
+    .node.mid { background: var(--navy-50); border-color: #b9c8dc; color: var(--navy); }
 
-    /* ─── Training ───────────────────────────────────────── */
-    .training { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px; }
-    .train {
-      display: flex; gap: 16px; align-items: flex-start;
-      background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px;
-    }
-    .train-icon {
-      width: 46px; height: 46px; border-radius: 14px; flex-shrink: 0; display: grid; place-items: center;
-      background: var(--mint-50); color: var(--mint);
-    }
-    .train-icon svg { width: 22px; height: 22px; }
-    .train small { display: block; font-size: .76rem; font-weight: 700; color: var(--ink-3); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 4px; }
-    .train b { font-size: .98rem; line-height: 1.45; display: block; }
+    .train-list { display: grid; grid-template-columns: 240px repeat(3, 1fr); background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); }
+    .train-list h3 { font-size: 1rem; padding: 22px 24px; background: var(--navy-50); color: var(--navy); display: flex; align-items: center; gap: 10px; border-radius: var(--radius) 0 0 var(--radius); }
+    .train-list h3 svg { width: 20px; height: 20px; color: var(--navy); flex-shrink: 0; }
+    .train { padding: 22px 24px; border-left: 1px solid var(--line); }
+    .train small { display: block; font-size: .74rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 4px; }
+    .train b { font-size: .94rem; font-weight: 600; line-height: 1.45; display: block; }
 
     /* ─── Testimonials ───────────────────────────────────── */
-    .quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-    .quote {
-      background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-lg);
-      padding: 30px; display: flex; flex-direction: column;
-    }
-    .stars { display: flex; gap: 3px; color: #f2b01e; margin-bottom: 18px; }
-    .stars svg { width: 17px; height: 17px; }
-    .quote p { font-size: 1rem; color: var(--ink); margin-bottom: 26px; }
-    .person { display: flex; align-items: center; gap: 12px; margin-top: auto; padding-top: 20px; border-top: 1px solid var(--line); }
-    .avatar {
-      width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; flex-shrink: 0;
-      font-size: .82rem; font-weight: 800; background: var(--sky-100); color: var(--blue);
-    }
-    .person strong { display: block; font-size: .93rem; }
-    .person span { font-size: .8rem; color: var(--ink-3); }
+    .quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .quote { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 32px 30px; display: flex; flex-direction: column; }
+    .quote svg { width: 28px; height: 28px; color: var(--navy); opacity: .25; margin-bottom: 14px; }
+    .quote p { color: var(--ink); font-size: .98rem; margin-bottom: 24px; }
+    .person { margin-top: auto; padding-top: 18px; border-top: 1px solid var(--line); }
+    .person strong { display: block; font-size: .92rem; }
+    .person span { font-size: .82rem; color: var(--ink-3); }
+
+    /* ─── CTA band ───────────────────────────────────────── */
+    .cta { background: var(--navy-50); border: 1px solid #d3deec; border-radius: var(--radius); padding: 44px 48px; display: flex; justify-content: space-between; align-items: center; gap: 32px; flex-wrap: wrap; margin-bottom: 88px; }
+    .cta h2 { font-size: clamp(1.5rem, 2.6vw, 2rem); margin-bottom: 6px; }
+    .cta p { color: var(--ink-2); }
+    .cta .btns { display: flex; gap: 12px; flex-wrap: wrap; }
 
     /* ─── Contact ────────────────────────────────────────── */
-    .contact-panel {
-      display: grid; grid-template-columns: 1fr 1.15fr; gap: 0;
-      border-radius: var(--radius-lg); overflow: hidden;
-      border: 1px solid var(--line); box-shadow: var(--shadow); background: var(--white);
-    }
-    .contact-side {
-      background: linear-gradient(160deg, var(--sky-100), var(--sky-50) 60%, var(--red-50));
-      padding: 48px 44px; display: flex; flex-direction: column; gap: 14px;
-    }
-    .contact-side h2 { margin-top: 12px; }
-    .contact-side .sub { margin-bottom: 14px; font-size: 1rem; }
-    .info {
-      display: flex; gap: 14px; align-items: center; text-decoration: none;
-      background: rgba(255, 255, 255, .8); border: 1px solid rgba(255, 255, 255, .9);
-      border-radius: 14px; padding: 14px 16px; transition: transform .2s, box-shadow .2s;
-    }
-    .info:hover { transform: translateX(3px); box-shadow: 0 6px 16px rgba(31, 86, 184, .1); }
-    .info-icon {
-      width: 40px; height: 40px; border-radius: 12px; flex-shrink: 0; display: grid; place-items: center;
-      background: var(--white); color: var(--blue); box-shadow: 0 2px 8px rgba(27, 36, 51, .06);
-    }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 56px; align-items: start; }
+    .contact-info h2 { margin-bottom: 16px; }
+    .contact-info .lead { margin-bottom: 32px; }
+    .info-list { border-top: 1px solid var(--line); }
+    .info { display: flex; gap: 16px; align-items: center; padding: 18px 0; border-bottom: 1px solid var(--line); text-decoration: none; }
+    .info-icon { width: 42px; height: 42px; border-radius: 8px; background: var(--navy-50); color: var(--navy); display: grid; place-items: center; flex-shrink: 0; }
     .info-icon svg { width: 19px; height: 19px; }
-    .info small { display: block; font-size: .76rem; color: var(--ink-3); font-weight: 600; }
-    .info span { font-weight: 700; font-size: .93rem; word-break: break-word; }
-    .contact-form-wrap { padding: 48px 44px; }
-    .contact-form-wrap h3 { font-size: 1.3rem; margin-bottom: 22px; }
+    .info small { display: block; font-size: .76rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); }
+    .info span { font-weight: 600; font-size: .96rem; word-break: break-word; }
+    a.info:hover span { color: var(--navy); }
+    .form-card { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 40px; box-shadow: 0 12px 32px rgba(16,27,45,.06); }
+    .form-card h3 { font-size: 1.25rem; margin-bottom: 6px; }
+    .form-card > p { color: var(--ink-2); font-size: .92rem; margin-bottom: 24px; }
     .form { display: grid; gap: 16px; }
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    .field label { display: block; font-size: .85rem; font-weight: 700; margin-bottom: 6px; }
-    .field label em { font-style: normal; font-weight: 500; color: var(--ink-3); }
-    .field input, .field textarea {
-      width: 100%; padding: 13px 15px; border-radius: 12px;
-      border: 1.5px solid var(--line); background: var(--sky-50); color: var(--ink);
-      font: 500 .95rem/1.4 var(--font); transition: border-color .2s, box-shadow .2s, background .2s;
-    }
+    .field label { display: block; font-size: .84rem; font-weight: 600; margin-bottom: 6px; }
+    .field label em { font-style: normal; font-weight: 400; color: var(--ink-3); }
+    .field input, .field textarea { width: 100%; padding: 12px 14px; border-radius: 6px; border: 1px solid #cdd6e2; background: var(--white); color: var(--ink); font: 400 .95rem/1.4 var(--font); transition: border-color .2s, box-shadow .2s; }
     .field textarea { min-height: 130px; resize: vertical; }
-    .field input::placeholder, .field textarea::placeholder { color: #a0aec0; }
-    .field input:focus, .field textarea:focus {
-      outline: none; border-color: var(--blue); background: var(--white);
-      box-shadow: 0 0 0 4px rgba(31, 86, 184, .12);
-    }
-    .field .err { display: none; font-size: .78rem; color: var(--red); margin-top: 5px; font-weight: 600; }
+    .field input::placeholder, .field textarea::placeholder { color: #9aa6b6; }
+    .field input:focus, .field textarea:focus { outline: none; border-color: var(--navy); box-shadow: 0 0 0 3px rgba(18,48,90,.12); }
+    .field .err { display: none; font-size: .78rem; color: var(--red); margin-top: 5px; font-weight: 500; }
     .field.invalid input, .field.invalid textarea { border-color: var(--red); }
     .field.invalid .err { display: block; }
-    .form-ok {
-      display: none; padding: 14px 16px; border-radius: 12px; font-weight: 600; margin-top: 16px;
-      background: var(--mint-50); color: var(--mint);
-    }
+    .form-ok { display: none; margin-top: 16px; padding: 14px 16px; border-radius: 6px; background: #e8f5ee; color: #1d7a4c; font-weight: 500; }
     .form-ok.show { display: block; }
     .form .btn { justify-self: start; }
-    .map { margin-top: 24px; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--line); }
-    .map iframe { width: 100%; height: 300px; border: 0; display: block; }
+    .map { margin-top: 56px; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+    .map iframe { width: 100%; height: 320px; border: 0; display: block; }
 
     /* ─── Footer ─────────────────────────────────────────── */
-    footer { background: var(--sky-50); border-top: 1px solid var(--line); padding: 56px 0 28px; }
-    .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1.2fr; gap: 40px; }
-    footer p, footer li { color: var(--ink-2); font-size: .92rem; }
-    footer h4 { font-size: .82rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 14px; color: var(--ink); }
-    footer ul { list-style: none; display: grid; gap: 8px; }
+    footer { background: var(--alt); border-top: 1px solid var(--line); padding: 64px 0 28px; }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 40px; }
+    footer p, footer li { color: var(--ink-2); font-size: .9rem; }
+    footer h4 { font-size: .76rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--ink); margin-bottom: 16px; }
+    footer ul { list-style: none; display: grid; gap: 9px; }
     footer ul a { text-decoration: none; }
-    footer ul a:hover { color: var(--blue); }
-    .footer-about p { margin-top: 14px; max-width: 340px; }
+    footer ul a:hover { color: var(--navy); }
+    .footer-about p { margin-top: 16px; max-width: 320px; }
+    .footer-bottom { margin-top: 48px; padding-top: 22px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: .82rem; color: var(--ink-3); }
     .credits a { color: inherit; }
-    .footer-bottom {
-      margin-top: 44px; padding-top: 22px; border-top: 1px solid var(--line);
-      display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
-      font-size: .85rem; color: var(--ink-3);
-    }
 
     /* ─── WhatsApp ───────────────────────────────────────── */
-    .wa {
-      position: fixed; right: 22px; bottom: 22px; z-index: 40;
-      width: 56px; height: 56px; border-radius: 50%;
-      background: #25d366; display: grid; place-items: center;
-      box-shadow: 0 8px 24px rgba(37, 211, 102, .35); transition: transform .2s;
-    }
-    .wa:hover { transform: scale(1.07); }
-    .wa svg { width: 28px; height: 28px; fill: #fff; }
+    .wa { position: fixed; right: 22px; bottom: 22px; z-index: 40; width: 54px; height: 54px; border-radius: 50%; background: #25d366; display: grid; place-items: center; box-shadow: 0 6px 18px rgba(0,0,0,.15); transition: transform .2s; }
+    .wa:hover { transform: scale(1.06); }
+    .wa svg { width: 27px; height: 27px; fill: #fff; }
 
     /* ─── Reveal (only when JS is on) ────────────────────── */
-    .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+    .js .reveal { opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; }
     .js .reveal.in { opacity: 1; transform: none; }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       .js .reveal { opacity: 1; transform: none; transition: none; }
-      .svc, .btn, .info { transition: none; }
+      .svc::after { transition: none; }
     }
 
     /* ─── Responsive ─────────────────────────────────────── */
-    @media (max-width: 1000px) {
+    @media (max-width: 1040px) {
+      .hero-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+      .hero-media, .about-media { max-width: 640px; }
+      .hero-media img, .about-media img { aspect-ratio: 16 / 10; }
       .services { grid-template-columns: repeat(2, 1fr); }
-      .values, .quotes, .training { grid-template-columns: 1fr; }
-      .about-grid { grid-template-columns: 1fr; gap: 56px; }
-      .about-media { max-width: 560px; }
-      .contact-panel { grid-template-columns: 1fr; }
-      .hero-stats { grid-template-columns: repeat(2, 1fr); }
-      .project { grid-template-columns: 52px 1fr auto; }
-      .project p { grid-column: 2 / -1; }
+      .svc:nth-child(3) { border-left: 0; }
+      .svc:nth-child(n+3) { border-top: 1px solid var(--line); }
+      .values, .quotes { grid-template-columns: 1fr; }
+      .train-list { grid-template-columns: 1fr; }
+      .train-list h3 { border-radius: var(--radius) var(--radius) 0 0; }
+      .train { border-left: 0; border-top: 1px solid var(--line); }
+      .sec-head { grid-template-columns: 1fr; gap: 14px; }
+      .sec-head .lead { justify-self: start; }
+      .row { grid-template-columns: 50px 1fr auto; }
+      .row p { grid-column: 2 / -1; }
+      .row.head { display: none; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
       .footer-about { grid-column: 1 / -1; }
     }
-    @media (max-width: 760px) {
+    @media (max-width: 800px) {
       /* Org chart becomes a vertical outline on small screens */
-      .org-box { padding: 28px 20px; }
       .tree { width: auto; margin: 0; }
-      .tree ul { display: block; padding: 0 0 0 20px; margin-left: 14px; border-left: 2px solid var(--tline); }
+      .tree ul { display: block; padding: 0 0 0 20px; margin-left: 14px; border-left: 1.5px solid var(--tline); }
       .tree > ul { padding: 0; margin: 0; border: 0; }
       .tree li, .tree li:only-child { padding: 8px 0 0; text-align: left; }
       .tree > ul > li { padding-top: 0; }
       .tree li::after, .tree ul ul::before, .tree > ul > li::before { display: none; }
       .tree li::before, .tree li:first-child::before, .tree li:last-child::before, .tree li:only-child::before {
-        display: block; top: 28px; left: -20px; right: auto; width: 16px; height: 0;
-        border: 0; border-top: 2px solid var(--tline); border-radius: 0;
+        display: block; top: 26px; left: -20px; right: auto; width: 16px; height: 0;
+        border: 0; border-top: 1.5px solid var(--tline); border-radius: 0;
       }
       .node { white-space: normal; }
+      .org-box { padding: 28px 20px; }
 
-      .topbar-links a:not(:first-child) { display: none; }
       .nav-links, .nav-cta { display: none; }
       .menu-btn { display: inline-flex; }
-      .brand-name small { display: none; }
-      .hero-visual img { aspect-ratio: 4 / 3; }
+      .util-links a:not(:first-child) { display: none; }
+      .metrics .container { grid-template-columns: repeat(2, 1fr); }
+      .metric:nth-child(3) { border-left: 0; padding-left: 0; }
+      .metric:nth-child(n+3) { border-top: 1px solid var(--line); }
+      .creds { grid-template-columns: 1fr; gap: 12px; }
+      .hero-tag { left: 12px; bottom: 12px; min-width: 0; }
+      .hero-media::before { display: none; }
     }
     @media (max-width: 600px) {
       .container { padding: 0 16px; }
       section { padding: 72px 0; }
-      .hero { padding-top: 52px; }
-      .hero-visual { margin-top: 44px; }
-      .hero-stats { margin-top: -36px; gap: 10px; padding: 0 16px; }
-      .hero-stat { padding: 16px; }
-      .hero-stat b { font-size: 1.35rem; }
-      .services, .form-row, .footer-grid { grid-template-columns: 1fr; }
-      .project { grid-template-columns: 1fr; gap: 10px; padding: 22px 20px; }
-      .project .n { display: none; }
-      .project p { grid-column: auto; }
-      .project .chip { justify-self: start; }
-      .badge-card { right: 12px; bottom: 12px; padding: 14px 16px; }
-      .badge-card b { font-size: 1.5rem; }
-      .blob { inset: -10px 10px 10px -10px; }
-      .contact-side, .contact-form-wrap { padding: 32px 22px; }
-      .topbar { display: none; }
+      .hero { padding-top: 48px; }
+      .metrics { margin-top: 64px; }
+      .metric { padding: 24px 12px; }
+      .metric:nth-child(odd) { padding-left: 0; }
+      .metric b { font-size: 1.7rem; }
+      .util { display: none; }
+      .brand-name small { display: none; }
+      .services, .pillars, .form-row, .footer-grid { grid-template-columns: 1fr; }
+      .svc { border-left: 0; border-top: 1px solid var(--line); padding: 28px 24px; }
+      .svc:first-child { border-top: 0; }
+      .row { grid-template-columns: 1fr; gap: 8px; padding: 20px; }
+      .row .idx { display: none; }
+      .row p { grid-column: auto; }
+      .cta { padding: 32px 24px; margin-bottom: 64px; }
+      .form-card { padding: 28px 20px; }
     }
   </style>
 </head>
@@ -444,23 +334,19 @@
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <symbol id="logo" viewBox="0 0 172 110">
       <text x="0" y="92" font-family="'Arial Black','Franklin Gothic Heavy',Arial,sans-serif" font-size="96" font-weight="900" fill="currentColor">R</text>
-      <path d="M 82 22 C 98 14, 110 26, 103 40 C 96 52, 78 52, 80 66 C 82 81, 100 83, 105 96" fill="none" stroke="#e2463b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M 82 22 C 72 18, 66 27, 73 36" fill="none" stroke="#e2463b" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 82 22 C 98 14, 110 26, 103 40 C 96 52, 78 52, 80 66 C 82 81, 100 83, 105 96" fill="none" stroke="#c8372d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 82 22 C 72 18, 66 27, 73 36" fill="none" stroke="#c8372d" stroke-width="8" stroke-linecap="round"/>
       <text x="104" y="92" font-family="'Arial Black','Franklin Gothic Heavy',Arial,sans-serif" font-size="96" font-weight="900" fill="currentColor">A</text>
     </symbol>
   </svg>
 
-  <!-- ─── Top bar ───────────────────────────────────────── -->
-  <div class="topbar">
+  <!-- ─── Utility bar ───────────────────────────────────── -->
+  <div class="util">
     <div class="container">
-      <span>Serving Oman since 2007</span>
-      <div class="topbar-links">
-        <a href="tel:+96879788712">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
-          +968 7978 8712</a>
-        <a href="mailto:alfidiya@rimalsahamoman.com">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
-          alfidiya@rimalsahamoman.com</a>
+      <span>Industrial &amp; institutional catering · Saham, Sultanate of Oman</span>
+      <div class="util-links">
+        <a href="tel:+96879788712"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>+968 7978 8712</a>
+        <a href="mailto:alfidiya@rimalsahamoman.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>alfidiya@rimalsahamoman.com</a>
       </div>
     </div>
   </div>
@@ -473,105 +359,120 @@
         <span class="brand-name">Rimal Saham Alfidiya<small>Trading &amp; Contracting</small></span>
       </a>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
+        <li><a href="#about">Company</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#team">Team</a></li>
+        <li><a href="#organisation">Organisation</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <a href="#contact" class="btn btn-primary nav-cta">Get a quote</a>
+      <a href="#contact" class="btn btn-primary nav-cta">Request a proposal</a>
       <button class="menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
     </div>
     <nav class="mobile-menu" id="mobile-menu">
-      <a href="#about">About</a>
+      <a href="#about">Company</a>
       <a href="#services">Services</a>
       <a href="#projects">Projects</a>
-      <a href="#team">Team</a>
-      <a href="#contact">Get a quote →</a>
+      <a href="#organisation">Organisation</a>
+      <a href="#contact">Request a proposal →</a>
     </nav>
   </header>
 
   <main id="top">
     <!-- ─── Hero ────────────────────────────────────────── -->
     <section class="hero">
-      <div class="container">
-        <span class="pill"><span class="dot"></span> Catering · Housekeeping · Contracting</span>
-        <h1>Fresh meals and clean sites for Oman's <span class="underline">workforce</span></h1>
-        <p class="sub">Rimal Saham Alfidiya delivers industrial and institutional catering, housekeeping and contracting services, safely, reliably and to HACCP standards.</p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Request a quote
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-          <a href="#services" class="btn btn-light">Explore services</a>
+      <div class="container hero-grid">
+        <div>
+          <span class="kicker">Established 2007 · Sultanate of Oman</span>
+          <h1>Industrial catering and facility services you can <span>rely on.</span></h1>
+          <p class="lead">Rimal Saham Alfidiya provides catering, housekeeping and contracting services to industrial and institutional clients across Oman, delivered to HACCP food-safety standards.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Request a proposal
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#services" class="btn btn-outline">View our services</a>
+          </div>
+          <div class="creds">
+            <div class="cred"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>HACCP-aligned</div>
+            <div class="cred"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14.5L7 22l5-3 5 3-1.5-7.5"/></svg>Certified staff</div>
+            <div class="cred"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg>Public &amp; private sector</div>
+          </div>
         </div>
-
-        <div class="hero-visual">
+        <div class="hero-media reveal">
           <img src="images/hero.jpg" alt="Clean, bright stainless-steel catering kitchen" width="1600" height="1200">
+          <div class="hero-tag">
+            <small>Core capability</small>
+            <b>Large-scale camp &amp; site catering</b>
+          </div>
         </div>
       </div>
-      <div class="hero-stats reveal">
-        <div class="hero-stat"><b id="years">19+</b><span>Years of experience</span></div>
-        <div class="hero-stat"><b>HACCP</b><span>Aligned operations</span></div>
-        <div class="hero-stat"><b>5+</b><span>Major ongoing projects</span></div>
-        <div class="hero-stat"><b>2</b><span>Sectors served: public &amp; private</span></div>
+
+      <div class="metrics">
+        <div class="container">
+          <div class="metric"><b id="years">19+</b><span>Years in operation</span></div>
+          <div class="metric"><b>5+</b><span>Major ongoing projects</span></div>
+          <div class="metric"><b>HACCP</b><span>Aligned food-safety system</span></div>
+          <div class="metric"><b>3</b><span>Levels of staff certification</span></div>
+        </div>
       </div>
     </section>
 
     <!-- ─── About ───────────────────────────────────────── -->
     <section id="about">
       <div class="container about-grid">
-        <div class="about-text reveal">
-          <span class="pill">Who we are</span>
-          <h2>A legacy of quality <span class="hl">since 2007</span></h2>
-          <p>Rimal Saham Alfidiya Trad &amp; Cont was established in 2007. Over the years we have built a strong client base across both the public and private sectors in Oman.</p>
-          <p>We specialise in industrial and institutional catering, together with housekeeping and a broad range of contracting services, and we keep improving our processes so every client gets consistent, reliable service.</p>
-          <ul class="checks">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Operations aligned with HACCP food-safety guidelines</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Trained, certified staff at every level</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Trusted by public and private sector clients</li>
-          </ul>
-        </div>
         <div class="about-media reveal">
-          <div class="blob"></div>
           <img src="images/about.jpg" alt="Rice, chapati and curry served in traditional dishes" loading="lazy" width="1200" height="801">
-          <div class="badge-card">
-            <small>Established</small>
-            <b>2007</b>
-            <span>Saham, Sultanate of Oman</span>
+        </div>
+        <div class="about-text reveal">
+          <span class="kicker">The company</span>
+          <h2>A trusted partner for Oman's industrial sector since 2007</h2>
+          <p>Rimal Saham Alfidiya Trad &amp; Cont was established in 2007. Over the years we have built a strong client base across both the public and private sectors in Oman.</p>
+          <p>Our core business is industrial and institutional catering, supported by housekeeping and a broad range of contracting services. We continuously improve our operational processes and make full use of our resources to deliver consistent, reliable service.</p>
+          <div class="pillars">
+            <div class="pillar"><b>Food safety</b><span>Operations aligned with HACCP guidelines</span></div>
+            <div class="pillar"><b>Trained workforce</b><span>Certification at every level</span></div>
+            <div class="pillar"><b>Quality system</b><span>Covering every functional area</span></div>
+            <div class="pillar"><b>Training centre</b><span>In-house, theory and practical</span></div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ─── Services ────────────────────────────────────── -->
-    <section id="services" class="tint">
+    <section id="services" class="alt">
       <div class="container">
-        <div class="head center reveal">
-          <span class="pill">What we offer</span>
-          <h2>Everything your site needs</h2>
-          <p class="sub">From industrial catering to staff training, end-to-end services that keep your operations running smoothly.</p>
+        <div class="sec-head reveal">
+          <div>
+            <span class="kicker">Services</span>
+            <h2>Comprehensive support for your sites and workforce</h2>
+          </div>
+          <p class="lead">From high-volume catering to housekeeping and staff development, we provide end-to-end services that keep operations running smoothly.</p>
         </div>
-        <div class="services">
-          <div class="svc blue reveal">
-            <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3v7a3 3 0 0 0 3 3v8M10 3v7a3 3 0 0 1-3 3M7 3v6"/><path d="M17 21V3c-2 1-3.5 3.5-3.5 7v3H17"/></svg></div>
+        <div class="services reveal">
+          <div class="svc">
+            <span class="svc-num">01</span>
+            <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3v7a3 3 0 0 0 3 3v8M10 3v7a3 3 0 0 1-3 3M7 3v6"/><path d="M17 21V3c-2 1-3.5 3.5-3.5 7v3H17"/></svg></div>
             <h3>Industrial catering</h3>
-            <p>High-volume, nutritious meals for industrial camps, construction sites and institutional facilities.</p>
+            <p>High-volume, nutritious meal services for industrial camps, construction sites and institutional facilities.</p>
           </div>
-          <div class="svc mint reveal">
-            <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg></div>
+          <div class="svc">
+            <span class="svc-num">02</span>
+            <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg></div>
             <h3>Housekeeping</h3>
-            <p>Professional cleaning and facility management that keeps your workforce's environment spotless.</p>
+            <p>Professional cleaning and facility management that maintains clean, healthy environments for your workforce.</p>
           </div>
-          <div class="svc sand reveal">
-            <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.5 6 .9-4.35 4.2 1 6L12 16.8 6.65 19.6l1-6L3.3 9.4l6-.9L12 3z"/></svg></div>
+          <div class="svc">
+            <span class="svc-num">03</span>
+            <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></div>
             <h3>Quality management</h3>
-            <p>A robust quality system covering every functional area, focused on keeping clients satisfied.</p>
+            <p>A robust quality management system ensures excellence in every functional area and keeps clients satisfied.</p>
           </div>
-          <div class="svc red reveal">
-            <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5L2 9z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/><path d="M22 9v6"/></svg></div>
+          <div class="svc">
+            <span class="svc-num">04</span>
+            <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5L2 9z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/><path d="M22 9v6"/></svg></div>
             <h3>Training &amp; development</h3>
-            <p>A dedicated training centre running introductory, theoretical and practical sessions for all staff.</p>
+            <p>A full training centre delivering introductory, theoretical and practical sessions for staff at all levels.</p>
           </div>
         </div>
       </div>
@@ -580,70 +481,72 @@
     <!-- ─── Projects ────────────────────────────────────── -->
     <section id="projects">
       <div class="container">
-        <div class="head reveal">
-          <span class="pill">Portfolio</span>
-          <h2>Ongoing major projects</h2>
-          <p class="sub">Trusted by industry leaders across Oman for critical catering and contracting operations.</p>
+        <div class="sec-head reveal">
+          <div>
+            <span class="kicker">Projects</span>
+            <h2>Ongoing major projects</h2>
+          </div>
+          <p class="lead">We are trusted by leading organisations across Oman to run critical catering and contracting operations.</p>
         </div>
-        <div class="projects reveal">
-          <div class="project">
-            <span class="n">01</span>
+        <div class="table reveal">
+          <div class="row head"><span>No.</span><span>Client</span><span>Scope of work</span><span>Service</span></div>
+          <div class="row">
+            <span class="idx">01</span>
             <h3>Al Rafaa Trading &amp; Contracting LLC</h3>
             <p>Full industrial catering, breakfast to dinner, for a large workforce in HACCP-aligned kitchens.</p>
-            <span class="chip">Industrial catering</span>
+            <span class="sector">Industrial catering</span>
           </div>
-          <div class="project">
-            <span class="n">02</span>
+          <div class="row">
+            <span class="idx">02</span>
             <h3>Shanfari Marble Co. L.L.C</h3>
             <p>Daily catering and professional housekeeping with meal plans tailored to a diverse workforce.</p>
-            <span class="chip">Catering &amp; housekeeping</span>
+            <span class="sector">Catering &amp; housekeeping</span>
           </div>
-          <div class="project">
-            <span class="n">03</span>
+          <div class="row">
+            <span class="idx">03</span>
             <h3>Al Rafaa Trading &amp; Contracting, Duqm</h3>
             <p>Large-scale camp catering in the Duqm Special Economic Zone under strict hygiene protocols.</p>
-            <span class="chip">Camp catering</span>
+            <span class="sector">Camp catering</span>
           </div>
-          <div class="project">
-            <span class="n">04</span>
+          <div class="row">
+            <span class="idx">04</span>
             <h3>Alomania International Cement Products</h3>
             <p>Industrial-grade catering for production facilities, with menus built for heavy-industry workers.</p>
-            <span class="chip">Manufacturing</span>
+            <span class="sector">Manufacturing catering</span>
           </div>
-          <div class="project">
-            <span class="n">05</span>
+          <div class="row">
+            <span class="idx">05</span>
             <h3>National Telephone Services Co. L.L.C</h3>
             <p>Corporate and institutional catering, staff canteen management and event support.</p>
-            <span class="chip">Corporate catering</span>
+            <span class="sector">Corporate catering</span>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ─── Values ──────────────────────────────────────── -->
-    <section class="tint">
+    <section class="alt">
       <div class="container">
-        <div class="head center reveal">
-          <span class="pill">Our culture</span>
-          <h2>The way we work</h2>
-          <p class="sub">The principles that guide how we work, grow and lead together.</p>
+        <div class="sec-head reveal">
+          <div>
+            <span class="kicker">Company policy</span>
+            <h2>The principles we work by</h2>
+          </div>
+          <p class="lead">Our core principles define how we work, grow and lead together as one team.</p>
         </div>
         <div class="values">
           <div class="value reveal">
-            <span class="big">01</span>
-            <div class="bar"></div>
+            <span class="n">01</span>
             <h3>Teamwork</h3>
             <p>Teamwork is the cornerstone of our company. We encourage team spirit, healthy relationships among colleagues and personal development.</p>
           </div>
           <div class="value reveal">
-            <span class="big">02</span>
-            <div class="bar"></div>
+            <span class="n">02</span>
             <h3>Hard work &amp; integrity</h3>
             <p>We expect hard work, integrity and honesty from every individual in the company, at every level.</p>
           </div>
           <div class="value reveal">
-            <span class="big">03</span>
-            <div class="bar"></div>
+            <span class="n">03</span>
             <h3>Reward &amp; recognition</h3>
             <p>We reward performance, and address misconduct swiftly and fairly to maintain a high-performance culture.</p>
           </div>
@@ -651,105 +554,87 @@
       </div>
     </section>
 
-    <!-- ─── Team structure + training ───────────────────── -->
-    <section id="team">
+    <!-- ─── Organisation ────────────────────────────────── -->
+    <section id="organisation">
       <div class="container">
-        <div class="head center reveal">
-          <span class="pill">Our team</span>
-          <h2>Company hierarchy</h2>
-          <p class="sub">A clear chain of responsibility from management to every kitchen and site.</p>
+        <div class="sec-head reveal">
+          <div>
+            <span class="kicker">Organisation</span>
+            <h2>Structure and certification</h2>
+          </div>
+          <p class="lead">A clear chain of responsibility from management to every kitchen and site, backed by formal training at every level.</p>
         </div>
-        <div class="org-box reveal">
-          <div class="tree">
-            <ul>
-              <li><span class="node top">Chairman</span>
-                <ul>
-                  <li><span class="node mid">Manager – Operations</span>
-                    <ul>
-                      <li><span class="node mid">HSE Officer</span>
-                        <ul>
-                          <li><span class="node">Housekeeping In-charge</span>
-                            <ul><li><span class="node">Cleaners</span></li></ul>
-                          </li>
-                          <li><span class="node">Main Chef</span>
-                            <ul>
-                              <li><span class="node">Assistant Chef</span>
-                                <ul><li><span class="node">Kitchen Helpers</span></li></ul>
-                              </li>
-                              <li><span class="node">Butchery</span></li>
-                              <li><span class="node">Chapathi / Sandwich Makers</span></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                      <li><span class="node mid">Supervisor</span>
-                        <ul>
-                          <li><span class="node">Store Keeper</span></li>
-                          <li><span class="node">Serving Staff</span></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+        <div class="org-wrap">
+          <div class="org-box reveal">
+            <div class="tree">
+              <ul>
+                <li><span class="node top">Chairman</span>
+                  <ul>
+                    <li><span class="node mid">Manager – Operations</span>
+                      <ul>
+                        <li><span class="node mid">HSE Officer</span>
+                          <ul>
+                            <li><span class="node">Housekeeping In-charge</span>
+                              <ul><li><span class="node">Cleaners</span></li></ul>
+                            </li>
+                            <li><span class="node">Main Chef</span>
+                              <ul>
+                                <li><span class="node">Assistant Chef</span>
+                                  <ul><li><span class="node">Kitchen Helpers</span></li></ul>
+                                </li>
+                                <li><span class="node">Butchery</span></li>
+                                <li><span class="node">Chapathi / Sandwich Makers</span></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li><span class="node mid">Supervisor</span>
+                          <ul>
+                            <li><span class="node">Store Keeper</span></li>
+                            <li><span class="node">Serving Staff</span></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-
-        <div class="training">
-          <div class="train reveal">
-            <div class="train-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14.5L7 22l5-3 5 3-1.5-7.5"/></svg></div>
-            <div><small>Managers &amp; supervisors</small><b>Food Safety Management System Internal Auditor (FSMSIA)</b></div>
-          </div>
-          <div class="train reveal">
-            <div class="train-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
-            <div><small>Cooks &amp; in-charges</small><b>Basic Food Hygiene (Level 2) and HSE Induction</b></div>
-          </div>
-          <div class="train reveal">
-            <div class="train-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg></div>
-            <div><small>All other workers</small><b>Basic Food Hygiene (BFH)</b></div>
+          <div class="train-list reveal">
+            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14.5L7 22l5-3 5 3-1.5-7.5"/></svg>Training &amp; certification</h3>
+            <div class="train"><small>Managers &amp; supervisors</small><b>Food Safety Management System Internal Auditor (FSMSIA)</b></div>
+            <div class="train"><small>Cooks &amp; in-charges</small><b>Basic Food Hygiene (Level 2) and HSE Induction</b></div>
+            <div class="train"><small>All other workers</small><b>Basic Food Hygiene (BFH)</b></div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ─── Testimonials ────────────────────────────────── -->
-    <section class="tint">
+    <section class="alt">
       <div class="container">
-        <div class="head center reveal">
-          <span class="pill">Testimonials</span>
-          <h2>What our clients say</h2>
+        <div class="sec-head stack reveal">
+          <div>
+            <span class="kicker">Client feedback</span>
+            <h2>What our clients say</h2>
+          </div>
         </div>
         <div class="quotes">
           <figure class="quote reveal">
-            <div class="stars" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.8z"/></svg>
-            </div>
-            <p>“Rimal Saham Alfidiya has been our trusted catering partner for several years. Their commitment to food safety and quality is unmatched.”</p>
-            <figcaption class="person">
-              <div class="avatar">AR</div>
-              <div><strong>Ahmed Al Rashdi</strong><span>Operations Manager, Al Rafaa Trading &amp; Contracting</span></div>
-            </figcaption>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.5 6C6.5 7 4 9.7 4 13.5V18h6v-6H7c0-2.3 1.5-3.8 3.3-4.5L9.5 6zm10 0c-3 1-5.5 3.7-5.5 7.5V18h6v-6h-3c0-2.3 1.5-3.8 3.3-4.5L19.5 6z"/></svg>
+            <p>Rimal Saham Alfidiya has been our trusted catering partner for several years. Their commitment to food safety and quality is unmatched.</p>
+            <figcaption class="person"><strong>Ahmed Al Rashdi</strong><span>Operations Manager, Al Rafaa Trading &amp; Contracting</span></figcaption>
           </figure>
           <figure class="quote reveal">
-            <div class="stars" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.8z"/></svg>
-            </div>
-            <p>“The professionalism and hygiene standards maintained by RSA are exceptional. Their catering has received overwhelmingly positive feedback from our employees.”</p>
-            <figcaption class="person">
-              <div class="avatar">SK</div>
-              <div><strong>Salim Al Kharousi</strong><span>Facility Director, Shanfari Marble Co.</span></div>
-            </figcaption>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.5 6C6.5 7 4 9.7 4 13.5V18h6v-6H7c0-2.3 1.5-3.8 3.3-4.5L9.5 6zm10 0c-3 1-5.5 3.7-5.5 7.5V18h6v-6h-3c0-2.3 1.5-3.8 3.3-4.5L19.5 6z"/></svg>
+            <p>The professionalism and hygiene standards maintained by RSA are exceptional. Their catering has received overwhelmingly positive feedback from our employees.</p>
+            <figcaption class="person"><strong>Salim Al Kharousi</strong><span>Facility Director, Shanfari Marble Co.</span></figcaption>
           </figure>
           <figure class="quote reveal">
-            <div class="stars" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.8z"/></svg>
-            </div>
-            <p>“They understood our industrial requirements from day one and delivered a tailored solution. Their HACCP compliance gives us complete peace of mind.”</p>
-            <figcaption class="person">
-              <div class="avatar">MN</div>
-              <div><strong>Mohammed Al Nabhani</strong><span>General Manager, Alomania International</span></div>
-            </figcaption>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.5 6C6.5 7 4 9.7 4 13.5V18h6v-6H7c0-2.3 1.5-3.8 3.3-4.5L9.5 6zm10 0c-3 1-5.5 3.7-5.5 7.5V18h6v-6h-3c0-2.3 1.5-3.8 3.3-4.5L19.5 6z"/></svg>
+            <p>They understood our industrial requirements from day one and delivered a tailored solution. Their HACCP compliance gives us complete peace of mind.</p>
+            <figcaption class="person"><strong>Mohammed Al Nabhani</strong><span>General Manager, Alomania International</span></figcaption>
           </figure>
         </div>
       </div>
@@ -758,27 +643,45 @@
     <!-- ─── Contact ─────────────────────────────────────── -->
     <section id="contact">
       <div class="container">
-        <div class="contact-panel reveal">
-          <div class="contact-side">
-            <span class="pill" style="align-self:flex-start; background: var(--white);">Contact us</span>
-            <h2>Let's work together</h2>
-            <p class="sub">Tell us about your site and workforce, and we'll get back to you shortly with a plan that fits.</p>
-            <a class="info" href="tel:+96879788712">
-              <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></div>
-              <div><small>Phone · Jagen Ramesh</small><span>+968 7978 8712</span></div>
-            </a>
-            <a class="info" href="mailto:alfidiya@rimalsahamoman.com">
-              <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
-              <div><small>Email</small><span>alfidiya@rimalsahamoman.com</span></div>
-            </a>
-            <a class="info" href="http://www.rimalsahamoman.com" target="_blank" rel="noopener">
-              <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
-              <div><small>Website</small><span>www.rimalsahamoman.com</span></div>
-            </a>
+        <div class="cta reveal">
+          <div>
+            <h2>Planning catering for a new site or camp?</h2>
+            <p>Talk to our operations team about your workforce size, location and service requirements.</p>
+          </div>
+          <div class="btns">
+            <a href="tel:+96879788712" class="btn btn-primary">Call +968 7978 8712</a>
+            <a href="#contact-form" class="btn btn-outline">Send an enquiry</a>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <span class="kicker">Contact</span>
+            <h2>Get in touch with our team</h2>
+            <p class="lead">Send us your requirements and we'll get back to you shortly.</p>
+            <div class="info-list">
+              <a class="info" href="tel:+96879788712">
+                <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></div>
+                <div><small>Phone · Jagen Ramesh</small><span>+968 7978 8712</span></div>
+              </a>
+              <a class="info" href="mailto:alfidiya@rimalsahamoman.com">
+                <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+                <div><small>Email</small><span>alfidiya@rimalsahamoman.com</span></div>
+              </a>
+              <a class="info" href="http://www.rimalsahamoman.com" target="_blank" rel="noopener">
+                <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+                <div><small>Website</small><span>www.rimalsahamoman.com</span></div>
+              </a>
+              <div class="info">
+                <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div>
+                <div><small>Location</small><span>Saham, Sultanate of Oman</span></div>
+              </div>
+            </div>
           </div>
 
-          <div class="contact-form-wrap">
-            <h3>Send us a message</h3>
+          <div class="form-card reveal">
+            <h3>Send an enquiry</h3>
+            <p>All fields except phone are required.</p>
             <form class="form" id="contact-form" novalidate>
               <div class="form-row">
                 <div class="field">
@@ -797,15 +700,15 @@
                 <div class="err">Please enter a valid email</div>
               </div>
               <div class="field">
-                <label for="cf-message">Message</label>
-                <textarea id="cf-message" name="message" placeholder="Tell us about your requirements"></textarea>
-                <div class="err">Please enter a message</div>
+                <label for="cf-message">Requirements</label>
+                <textarea id="cf-message" name="message" placeholder="Site location, workforce size, services needed"></textarea>
+                <div class="err">Please describe your requirements</div>
               </div>
-              <button type="submit" class="btn btn-primary">Send message
+              <button type="submit" class="btn btn-primary">Submit enquiry
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </button>
             </form>
-            <div class="form-ok" id="form-ok">Thanks! Your email app should open with your message ready to send.</div>
+            <div class="form-ok" id="form-ok">Thank you. Your email app should open with your enquiry ready to send.</div>
           </div>
         </div>
 
@@ -830,13 +733,20 @@
           <h4>Company</h4>
           <ul>
             <li><a href="#about">About us</a></li>
-            <li><a href="#services">Services</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#team">Our team</a></li>
+            <li><a href="#organisation">Organisation</a></li>
           </ul>
         </div>
         <div>
-          <h4>Get in touch</h4>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Industrial catering</a></li>
+            <li><a href="#services">Housekeeping</a></li>
+            <li><a href="#services">Training</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
           <ul>
             <li><a href="tel:+96879788712">+968 7978 8712</a></li>
             <li><a href="mailto:alfidiya@rimalsahamoman.com">alfidiya@rimalsahamoman.com</a></li>
@@ -862,12 +772,6 @@
     const now = new Date().getFullYear();
     document.getElementById('year').textContent = now;
     document.getElementById('years').textContent = (now - 2007) + '+';
-
-    // Nav shadow on scroll
-    const nav = document.getElementById('nav');
-    const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 40);
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
 
     // Mobile menu
     const menuBtn = document.getElementById('menu-btn');
@@ -902,7 +806,7 @@
         }
       });
     }, { rootMargin: '-45% 0px -50% 0px' });
-    ['about', 'services', 'projects', 'team'].forEach(id => navObs.observe(document.getElementById(id)));
+    ['about', 'services', 'projects', 'organisation', 'contact'].forEach(id => navObs.observe(document.getElementById(id)));
 
     // Contact form → opens the visitor's email app
     document.getElementById('contact-form').addEventListener('submit', e => {
@@ -922,7 +826,7 @@
 
       const body = 'Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + (el.phone.value.trim() || 'N/A') + '\n\n' + msg;
       window.location.href = 'mailto:alfidiya@rimalsahamoman.com?subject=' +
-        encodeURIComponent('Inquiry from ' + name) + '&body=' + encodeURIComponent(body);
+        encodeURIComponent('Enquiry from ' + name) + '&body=' + encodeURIComponent(body);
       document.getElementById('form-ok').classList.add('show');
       f.reset();
     });
