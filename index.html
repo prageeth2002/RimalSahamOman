@@ -164,7 +164,7 @@
     .checks li { display: flex; gap: 12px; align-items: flex-start; font-weight: 600; }
     .checks svg { width: 22px; height: 22px; flex-shrink: 0; color: var(--mint); background: var(--mint-50); border-radius: 50%; padding: 4px; }
     .about-media { position: relative; }
-    .about-media img { width: 100%; aspect-ratio: 4 / 4.4; object-fit: cover; border-radius: var(--radius-lg); }
+    .about-media img { width: 100%; aspect-ratio: 4 / 4.4; object-fit: cover; object-position: 52% center; border-radius: var(--radius-lg); }
     .badge-card {
       position: absolute; right: -18px; bottom: 32px;
       background: var(--white); border-radius: var(--radius); padding: 18px 22px;
@@ -357,6 +357,7 @@
     footer ul a { text-decoration: none; }
     footer ul a:hover { color: var(--blue); }
     .footer-about p { margin-top: 14px; max-width: 340px; }
+    .credits a { color: inherit; }
     .footer-bottom {
       margin-top: 44px; padding-top: 22px; border-top: 1px solid var(--line);
       display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
@@ -506,7 +507,7 @@
         </div>
 
         <div class="hero-visual">
-          <img src="images/hero_bg.png" alt="Large industrial kitchen with chefs preparing meals" width="1024" height="1024">
+          <img src="images/hero.jpg" alt="Clean, bright stainless-steel catering kitchen" width="1600" height="1200">
         </div>
       </div>
       <div class="hero-stats reveal">
@@ -533,7 +534,7 @@
         </div>
         <div class="about-media reveal">
           <div class="blob"></div>
-          <img src="images/about_hero.png" alt="Chefs plating meals in a professional kitchen" loading="lazy" width="1024" height="1024">
+          <img src="images/about.jpg" alt="Rice, chapati and curry served in traditional dishes" loading="lazy" width="1200" height="801">
           <div class="badge-card">
             <small>Established</small>
             <b>2007</b>
@@ -845,7 +846,7 @@
       </div>
       <div class="footer-bottom">
         <span>&copy; <span id="year">2026</span> Rimal Saham Alfidiya Trad &amp; Cont. All rights reserved.</span>
-        <span>HACCP-aligned operations</span>
+        <span class="credits">Photos: <a href="https://commons.wikimedia.org/w/index.php?curid=50172669" target="_blank" rel="noopener">George Mason University</a> (CC BY 2.0), <a href="https://commons.wikimedia.org/w/index.php?curid=73566520" target="_blank" rel="noopener">Satdeep Gill</a> (CC BY-SA 4.0)</span>
       </div>
     </div>
   </footer>
